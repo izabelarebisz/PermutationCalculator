@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Kalkulator permutacji</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="skrypt.js"></script> 
+</head>
+<body>	
+<div class="container">
+	<h1>Kalkulator permutacji</h1>
+	<div class="layout">
+		<div class="inputs">
+			<p>Najpierw wybierz jakie działanie chcesz wykonać.</p>
+			
+			<input class="eq1" type="text" id="pole1" onclick="wpisz('pole1')" readonly disabled/>
+			
+			<input class="eq" type="text" id="pole2" onclick="wpisz('pole2')" readonly disabled/>
+			
+			<div class="result">
+				<div id="13" class="option" onclick="wybierzDzialanie(13)">Iloczyn</div> 
+				<div id="14" class="option" onclick="wybierzDzialanie(14)">Potęga</div>
+				<div id="15" class="option" onclick="wybierzDzialanie(15)">Odwrotność</div>
+			</div>
+			
+		</div>
+		<div class="actions">
+			<button id="0" class="buttons" value="7" onclick="przycisk(0)">7</button>
+			<button id="1" class="buttons" value="8" onclick="przycisk(1)">8</button>
+			<button id="2" class="buttons" value="9" onclick="przycisk(2)">9</button>
+			<button id="3" class="buttons" value="4" onclick="przycisk(3)">4</button>
+			<button id="4" class="buttons" value="5" onclick="przycisk(4)">5</button>
+			<button id="5" class="buttons" value="6" onclick="przycisk(5)">6</button>
+			<button id="6" class="buttons" value="1" onclick="przycisk(6)">1</button>
+			<button id="7" class="buttons" value="2" onclick="przycisk(7)">2</button>
+			<button id="8" class="buttons" value="3" onclick="przycisk(8)">3</button>
+			<button id="9" class="buttons" value="(" onclick="przycisk(9)">(</button>
+			<button id="10" class="buttons" value=")" onclick="przycisk(10)">)</button>
+			<button id="11" class="buttons" value="back" onclick="przycisk(11)">←</button>
+		</div>
+	</div>
+	<button id="12" class="solve" onclick="oblicz()">Oblicz</button>
+	<div class="result">
+	
+	<h1>Wynik:</h1>
+    	<div class="result2" id="wynik">
+	</div>
+	
+</div>
+
+</body>
+
+</html>
